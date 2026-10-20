@@ -10,6 +10,10 @@
 
 La carpeta contiene cuatro actividades: estrategia, ejecución UI, rol QA y certificación. Los dos documentos nuevos de aula se preservan como guías originales en `04_Guias_y_plantillas`, separados de las respuestas. La evaluación anterior se conserva en `05_Antecedentes`.
 
+## Consultar el análisis local conservado
+
+Al terminar se detienen los contenedores QA para liberar recursos. En este equipo se pueden volver a iniciar con `docker start cuidarte-qa-db cuidarte-qa-sonar-lts`, con Docker Desktop activo. El panel queda en `http://localhost:9000`. Los datos de acceso local están fuera del repositorio, en `.qa_tools/Acceso_Sonar_Local.txt` del directorio CodigoFuenteB; ese archivo no se incluye en el ZIP. Las exportaciones y la presentación permiten defender el trabajo sin iniciar Docker.
+
 ## Preparación personal
 
 Leer primero el resumen y los seis defectos del informe. Abrir `Guion_defensa_individual.docx` y ensayar las doce diapositivas con cronómetro. El tiempo asignado es 10 minutos y luego 5 de preguntas; no dividir el guion entre dos personas. Cada integrante debe comprender autenticación, RBAC/IDOR, persistencia, auditoría, carga y limitaciones del SAST.

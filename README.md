@@ -30,6 +30,8 @@ Informe, actividades y defensa del aseguramiento de calidad del sistema clínico
 
 Suite API: **12 checkpoints ejecutados, 6 PASS y 6 FAIL**. Defectos: dos críticos (escalamiento de rol y eliminación anónima) y cuatro graves (contraseñas, borrado físico, auditoría y latencia). El lote de 200 solicitudes es una prueba breve independiente; no acredita usuarios sostenidos, disponibilidad mensual o JMeter. Las métricas definitivas de SonarQube se consultan en sus JSON originales y en el informe final.
 
+SonarQube **9.9.8.100196**, escáner **8.1.0.6389**: **1 bug, 72 code smells, 3 hotspots TO_REVIEW, 0 vulnerabilidades reportadas y 0% de cobertura** (sin LCOV). La tarea de análisis terminó SUCCESS. El gate figura OK con conditions vacío; no sustituye los criterios QA ni los defectos de autorización confirmados. El informe documenta la advertencia de compatibilidad con Node 22 y el uso de una edición histórica en este entorno académico.
+
 Los ocho casos maestros no equivalen a doce ejecuciones integrales. Los cinco PASS UI de la actividad anterior son antecedentes históricos. No hay ERS íntegra ni feedback docente adjuntos; no se declara 100% de cobertura ERS. No se inventan métricas de código, resultados DAST ni auditoría WCAG.
 
 ## Reproducir
