@@ -3,11 +3,11 @@
   "case_fields": "PASS",
   "api_counts": "PASS",
   "presentation_notes": "PASS",
-  "presentation_slides": 12,
+  "presentation_slides": 14,
   "pdf_pages": {
-    "01_Informe_EP3/Informe_EP3_Cuidarte.pdf": 12,
+    "01_Informe_EP3/Informe_EP3_Cuidarte.pdf": 14,
     "02_Presentacion_EP4/Guion_defensa_individual.pdf": 3,
-    "02_Presentacion_EP4/Presentacion_EP4_Cuidarte.pdf": 12,
+    "02_Presentacion_EP4/Presentacion_EP4_Cuidarte.pdf": 14,
     "03_Actividades_en_clases/01_Estrategia_de_pruebas_completada.pdf": 1,
     "03_Actividades_en_clases/01_Estrategia_de_pruebas_original.pdf": 9,
     "03_Actividades_en_clases/02_Ejecucion_UI_consolidada.pdf": 1,
@@ -17,5 +17,5 @@
     "04_Guias_y_plantillas/Pauta_EP4_original.pdf": 6,
     "05_Antecedentes/Informe_EP1_original.pdf": 18
   },
-  "sonarqube_export_present": false
+  "sonarqube_export_present": true
 }

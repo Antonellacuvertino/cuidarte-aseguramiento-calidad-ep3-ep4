@@ -1,0 +1,97 @@
+{
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 500,
+    "total": 3
+  },
+  "hotspots": [
+    {
+      "key": "AaFaUAMx3bLWoNeHjOy8",
+      "component": "isy1102-cuidarte:BACKEND/src/routes/documentos.js",
+      "project": "isy1102-cuidarte",
+      "securityCategory": "dos",
+      "vulnerabilityProbability": "MEDIUM",
+      "status": "TO_REVIEW",
+      "line": 11,
+      "message": "Make sure the content length limit is safe here.",
+      "author": "",
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "textRange": {
+        "startLine": 11,
+        "endLine": 11,
+        "startOffset": 11,
+        "endOffset": 31
+      },
+      "flows": [],
+      "ruleKey": "javascript:S5693",
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUARR3bLWoNeHjOzJ",
+      "component": "isy1102-cuidarte:BACKEND/src/app.js",
+      "project": "isy1102-cuidarte",
+      "securityCategory": "insecure-conf",
+      "vulnerabilityProbability": "LOW",
+      "status": "TO_REVIEW",
+      "line": 21,
+      "message": "Make sure that enabling CORS is safe here.",
+      "author": "",
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "textRange": {
+        "startLine": 21,
+        "endLine": 21,
+        "startOffset": 8,
+        "endOffset": 14
+      },
+      "flows": [],
+      "ruleKey": "javascript:S5122",
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUARQ3bLWoNeHjOzI",
+      "component": "isy1102-cuidarte:BACKEND/src/app.js",
+      "project": "isy1102-cuidarte",
+      "securityCategory": "others",
+      "vulnerabilityProbability": "LOW",
+      "status": "TO_REVIEW",
+      "line": 19,
+      "message": "Make sure disclosing the fingerprinting of this web technology is safe here.",
+      "author": "",
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "textRange": {
+        "startLine": 19,
+        "endLine": 19,
+        "startOffset": 6,
+        "endOffset": 9
+      },
+      "flows": [],
+      "ruleKey": "javascript:S5689",
+      "messageFormattings": []
+    }
+  ],
+  "components": [
+    {
+      "key": "isy1102-cuidarte:BACKEND/src/app.js",
+      "qualifier": "FIL",
+      "name": "app.js",
+      "longName": "BACKEND/src/app.js",
+      "path": "BACKEND/src/app.js"
+    },
+    {
+      "key": "isy1102-cuidarte",
+      "qualifier": "TRK",
+      "name": "Cuidarte+ ISY1102 QA",
+      "longName": "Cuidarte+ ISY1102 QA"
+    },
+    {
+      "key": "isy1102-cuidarte:BACKEND/src/routes/documentos.js",
+      "qualifier": "FIL",
+      "name": "documentos.js",
+      "longName": "BACKEND/src/routes/documentos.js",
+      "path": "BACKEND/src/routes/documentos.js"
+    }
+  ]
+}

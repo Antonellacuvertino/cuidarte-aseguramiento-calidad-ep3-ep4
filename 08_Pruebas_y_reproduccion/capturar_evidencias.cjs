@@ -5,6 +5,7 @@ const procs=[];let browser;
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function ready(url){for(let i=0;i<60;i++){try{if((await fetch(url)).ok)return}catch{}await sleep(1000)}throw Error('Servicio no accesible: '+url)}
 async function main(){
+ if(require('os').freemem()<1300*1024*1024){console.log('Capturas suspendidas: memoria disponible menor de 1300 MB; se conserva evidencia previa.');return;}
  browser=await chromium.launch({headless:true,channel:'msedge',args:['--no-proxy-server']});const page=await browser.newPage({viewport:{width:1440,height:1050}});
  await page.goto('file:///'+path.join(root,'06_Evidencias/api/Resumen_resultados.html').replaceAll('\\','/'));await page.screenshot({path:path.join(out,'resultados_api.png'),fullPage:true});
  const acta={date:new Date().toISOString(),tool:'Playwright Chromium; capturas reales de navegador',captures:[{file:'resultados_api.png',source:'Resumen HTML generado a partir del JSON de ejecución; no es UI de la app'}],ui_status:'PENDIENTE'};

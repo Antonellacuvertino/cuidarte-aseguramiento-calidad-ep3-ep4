@@ -52,7 +52,7 @@ Clasificamos como crítico el escalamiento de privilegios porque un médico logr
 
 ## Diapositiva 9. SonarQube: interpretar, no solo contar — 07:10 a 08:05
 
-Estos son los valores de la exportación real de SonarQube y su Quality Gate. Los bugs apuntan a fiabilidad, los code smells a mantenibilidad y los hotspots requieren revisión contextual. Un hotspot no se declara automáticamente una vulnerabilidad. No generamos un reporte LCOV, por lo que la cobertura no demuestra pruebas instrumentadas. Además contrastamos el texto del encargo: el controlador citado para SQLi no existe y las consultas observadas usan parámetros. Reportamos solo lo que consta en el código y en las evidencias, incluso si el analizador no detecta una falla que sí confirma la API.
+SonarQube registró un bug de CSS, setenta y dos code smells y tres hotspots de carga, CORS e identificación de Express. Reportó cero vulnerabilidades, pero eso no elimina los defectos críticos que comprobamos por API. Los hotspots siguen pendientes de revisión. La cobertura es cero porque no importamos LCOV. El gate aparece OK con la lista de condiciones vacía: no equivale a cumplir nuestros criterios. También descartamos como no confirmada la SQLi del controlador inexistente del encargo. Las versiones y la advertencia de compatibilidad de Node quedaron documentadas como limitaciones del análisis.
 
 **Apoyo:** señalar la exportación y captura reales de SonarQube.
 
@@ -93,6 +93,10 @@ La conclusión es no certificado para producción. Tenemos dos defectos crítico
 **¿200 solicitudes son 200 usuarios sostenidos?** No. Se lanzó un lote breve de 200 peticiones concurrentes; no incluye sesiones clínicas sostenidas ni renderizado. No reemplaza JMeter de 10 minutos o un estudio de capacidad.
 
 **¿Por qué hay cobertura cero o no disponible si se probaron endpoints?** Porque no se produjo LCOV de ejecución instrumentada del código. Casos ejecutados, requisitos cubiertos y líneas cubiertas son métricas distintas.
+
+**¿Por qué no certificado si SonarQube muestra OK?** El JSON del gate tiene conditions vacío; no prueba nuestros criterios de salida. La API confirmó dos críticos, y los hotspots siguen TO_REVIEW. No se equipara un gate con una certificación del producto.
+
+**¿Qué versiones se usaron y qué límite tienen?** SonarQube 9.9.8 y escáner 8.1 en un perfil académico de memoria limitada. El analizador advirtió compatibilidad con Node 22; registró 56/56 archivos JS analizados, pero se requiere repetir con una combinación validada antes de certificar. No recomendamos esa edición histórica para producción actual.
 
 **¿Se detectó SQLi en examenes.controller.js?** No se confirmó: ese archivo no existe en el código recibido. Se revisó examenes.js y se informaron solo hallazgos respaldados. No se creó un resultado para coincidir con el encargo.
 

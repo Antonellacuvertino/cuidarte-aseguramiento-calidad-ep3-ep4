@@ -1,0 +1,4920 @@
+{
+  "total": 73,
+  "p": 1,
+  "ps": 500,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 500,
+    "total": 73
+  },
+  "effortTotal": 466,
+  "issues": [
+    {
+      "key": "AaFaUANG3bLWoNeHjOy-",
+      "rule": "javascript:S3776",
+      "severity": "CRITICAL",
+      "component": "isy1102-cuidarte:BACKEND/src/routes/auth.js",
+      "project": "isy1102-cuidarte",
+      "line": 71,
+      "hash": "a0292dd1117974baa6f135f52a479eed",
+      "textRange": {
+        "startLine": 71,
+        "endLine": 71,
+        "startOffset": 68,
+        "endOffset": 70
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/auth.js",
+              "textRange": {
+                "startLine": 75,
+                "endLine": 75,
+                "startOffset": 30,
+                "endOffset": 31
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/auth.js",
+              "textRange": {
+                "startLine": 79,
+                "endLine": 79,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/auth.js",
+              "textRange": {
+                "startLine": 84,
+                "endLine": 84,
+                "startOffset": 6,
+                "endOffset": 8
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/auth.js",
+              "textRange": {
+                "startLine": 87,
+                "endLine": 87,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+3 (incl. 2 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/auth.js",
+              "textRange": {
+                "startLine": 101,
+                "endLine": 101,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/auth.js",
+              "textRange": {
+                "startLine": 119,
+                "endLine": 119,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/auth.js",
+              "textRange": {
+                "startLine": 127,
+                "endLine": 127,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/auth.js",
+              "textRange": {
+                "startLine": 128,
+                "endLine": 128,
+                "startOffset": 6,
+                "endOffset": 8
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/auth.js",
+              "textRange": {
+                "startLine": 134,
+                "endLine": 134,
+                "startOffset": 8,
+                "endOffset": 12
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/auth.js",
+              "textRange": {
+                "startLine": 153,
+                "endLine": 153,
+                "startOffset": 4,
+                "endOffset": 9
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/auth.js",
+              "textRange": {
+                "startLine": 155,
+                "endLine": 155,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/auth.js",
+              "textRange": {
+                "startLine": 163,
+                "endLine": 163,
+                "startOffset": 25,
+                "endOffset": 27
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Refactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.",
+      "effort": "7min",
+      "debt": "7min",
+      "author": "",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAMy3bLWoNeHjOy9",
+      "rule": "javascript:S4165",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:BACKEND/src/routes/documentos.js",
+      "project": "isy1102-cuidarte",
+      "line": 244,
+      "hash": "3172cc87ae0d24b1e043e78dfdbbecab",
+      "textRange": {
+        "startLine": 244,
+        "endLine": 244,
+        "startOffset": 20,
+        "endOffset": 37
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this redundant assignment: \"contentType\" already holds the assigned value along all execution paths.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "redundant"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUALW3bLWoNeHjOy6",
+      "rule": "javascript:S3776",
+      "severity": "CRITICAL",
+      "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+      "project": "isy1102-cuidarte",
+      "line": 48,
+      "hash": "c2a9863b26115f7ddbb79400e7046906",
+      "textRange": {
+        "startLine": 48,
+        "endLine": 48,
+        "startOffset": 60,
+        "endOffset": 62
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 51,
+                "endLine": 51,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 98,
+                "endLine": 98,
+                "startOffset": 25,
+                "endOffset": 27
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 101,
+                "endLine": 101,
+                "startOffset": 21,
+                "endOffset": 23
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 102,
+                "endLine": 102,
+                "startOffset": 21,
+                "endOffset": 23
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 104,
+                "endLine": 104,
+                "startOffset": 17,
+                "endOffset": 19
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 105,
+                "endLine": 105,
+                "startOffset": 18,
+                "endOffset": 20
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 106,
+                "endLine": 106,
+                "startOffset": 35,
+                "endOffset": 37
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 107,
+                "endLine": 107,
+                "startOffset": 37,
+                "endOffset": 39
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 108,
+                "endLine": 108,
+                "startOffset": 37,
+                "endOffset": 39
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 109,
+                "endLine": 109,
+                "startOffset": 23,
+                "endOffset": 25
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 110,
+                "endLine": 110,
+                "startOffset": 23,
+                "endOffset": 25
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 111,
+                "endLine": 111,
+                "startOffset": 24,
+                "endOffset": 26
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 112,
+                "endLine": 112,
+                "startOffset": 17,
+                "endOffset": 19
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 113,
+                "endLine": 113,
+                "startOffset": 30,
+                "endOffset": 32
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 114,
+                "endLine": 114,
+                "startOffset": 23,
+                "endOffset": 25
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 115,
+                "endLine": 115,
+                "startOffset": 40,
+                "endOffset": 42
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 116,
+                "endLine": 116,
+                "startOffset": 19,
+                "endOffset": 21
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 123,
+                "endLine": 123,
+                "startOffset": 28,
+                "endOffset": 30
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 129,
+                "endLine": 129,
+                "startOffset": 4,
+                "endOffset": 9
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 131,
+                "endLine": 131,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 139,
+                "endLine": 139,
+                "startOffset": 25,
+                "endOffset": 27
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Refactor this function to reduce its Cognitive Complexity from 22 to the 15 allowed.",
+      "effort": "12min",
+      "debt": "12min",
+      "author": "",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUALW3bLWoNeHjOy7",
+      "rule": "javascript:S3776",
+      "severity": "CRITICAL",
+      "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+      "project": "isy1102-cuidarte",
+      "line": 276,
+      "hash": "e4325ee87d8254f4f32b7d74c44ef82b",
+      "textRange": {
+        "startLine": 276,
+        "endLine": 276,
+        "startOffset": 68,
+        "endOffset": 70
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 279,
+                "endLine": 279,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 297,
+                "endLine": 297,
+                "startOffset": 57,
+                "endOffset": 59
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 298,
+                "endLine": 298,
+                "startOffset": 54,
+                "endOffset": 56
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 300,
+                "endLine": 300,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 300,
+                "endLine": 300,
+                "startOffset": 25,
+                "endOffset": 27
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 308,
+                "endLine": 308,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 314,
+                "endLine": 314,
+                "startOffset": 6,
+                "endOffset": 8
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 322,
+                "endLine": 322,
+                "startOffset": 6,
+                "endOffset": 8
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 344,
+                "endLine": 344,
+                "startOffset": 4,
+                "endOffset": 7
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 345,
+                "endLine": 345,
+                "startOffset": 6,
+                "endOffset": 8
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 348,
+                "endLine": 348,
+                "startOffset": 42,
+                "endOffset": 43
+              },
+              "msg": "+3 (incl. 2 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 352,
+                "endLine": 352,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 365,
+                "endLine": 365,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 371,
+                "endLine": 371,
+                "startOffset": 28,
+                "endOffset": 30
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 377,
+                "endLine": 377,
+                "startOffset": 4,
+                "endOffset": 9
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+              "textRange": {
+                "startLine": 381,
+                "endLine": 381,
+                "startOffset": 25,
+                "endOffset": 27
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Refactor this function to reduce its Cognitive Complexity from 21 to the 15 allowed.",
+      "effort": "11min",
+      "debt": "11min",
+      "author": "",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAJb3bLWoNeHjOy3",
+      "rule": "javascript:S4624",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+      "project": "isy1102-cuidarte",
+      "line": 60,
+      "hash": "fdf6e2538f54e70d574353070bfe14e3",
+      "textRange": {
+        "startLine": 60,
+        "endLine": 60,
+        "startOffset": 66,
+        "endOffset": 86
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Refactor this code to not use nested template literals.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "brain-overload",
+        "confusing"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAJe3bLWoNeHjOy4",
+      "rule": "javascript:S3776",
+      "severity": "CRITICAL",
+      "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+      "project": "isy1102-cuidarte",
+      "line": 283,
+      "hash": "3382d9430526c20da4bf964ca8693ec8",
+      "textRange": {
+        "startLine": 283,
+        "endLine": 283,
+        "startOffset": 15,
+        "endOffset": 35
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 299,
+                "endLine": 299,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 308,
+                "endLine": 308,
+                "startOffset": 36,
+                "endOffset": 38
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 310,
+                "endLine": 310,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 318,
+                "endLine": 318,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 320,
+                "endLine": 320,
+                "startOffset": 6,
+                "endOffset": 8
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 321,
+                "endLine": 321,
+                "startOffset": 27,
+                "endOffset": 29
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 337,
+                "endLine": 337,
+                "startOffset": 6,
+                "endOffset": 8
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 337,
+                "endLine": 337,
+                "startOffset": 40,
+                "endOffset": 42
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 346,
+                "endLine": 346,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+3 (incl. 2 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 346,
+                "endLine": 346,
+                "startOffset": 53,
+                "endOffset": 55
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 361,
+                "endLine": 361,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 365,
+                "endLine": 365,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 369,
+                "endLine": 369,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 374,
+                "endLine": 374,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 382,
+                "endLine": 382,
+                "startOffset": 6,
+                "endOffset": 8
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 387,
+                "endLine": 387,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 393,
+                "endLine": 393,
+                "startOffset": 6,
+                "endOffset": 8
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 420,
+                "endLine": 420,
+                "startOffset": 28,
+                "endOffset": 30
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 422,
+                "endLine": 422,
+                "startOffset": 31,
+                "endOffset": 32
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 428,
+                "endLine": 428,
+                "startOffset": 4,
+                "endOffset": 9
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 432,
+                "endLine": 432,
+                "startOffset": 25,
+                "endOffset": 27
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Refactor this function to reduce its Cognitive Complexity from 27 to the 15 allowed.",
+      "effort": "17min",
+      "debt": "17min",
+      "author": "",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAJe3bLWoNeHjOy5",
+      "rule": "javascript:S3776",
+      "severity": "CRITICAL",
+      "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+      "project": "isy1102-cuidarte",
+      "line": 437,
+      "hash": "0501759539a01bb4727655ebb8faf353",
+      "textRange": {
+        "startLine": 437,
+        "endLine": 437,
+        "startOffset": 15,
+        "endOffset": 41
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 453,
+                "endLine": 453,
+                "startOffset": 48,
+                "endOffset": 50
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 455,
+                "endLine": 455,
+                "startOffset": 34,
+                "endOffset": 36
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 456,
+                "endLine": 456,
+                "startOffset": 54,
+                "endOffset": 56
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 459,
+                "endLine": 459,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 460,
+                "endLine": 460,
+                "startOffset": 6,
+                "endOffset": 8
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 466,
+                "endLine": 466,
+                "startOffset": 6,
+                "endOffset": 8
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 476,
+                "endLine": 476,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 476,
+                "endLine": 476,
+                "startOffset": 17,
+                "endOffset": 19
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 484,
+                "endLine": 484,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 484,
+                "endLine": 484,
+                "startOffset": 29,
+                "endOffset": 31
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 496,
+                "endLine": 496,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 500,
+                "endLine": 500,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 504,
+                "endLine": 504,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 509,
+                "endLine": 509,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 517,
+                "endLine": 517,
+                "startOffset": 6,
+                "endOffset": 8
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 522,
+                "endLine": 522,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 522,
+                "endLine": 522,
+                "startOffset": 29,
+                "endOffset": 31
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 554,
+                "endLine": 554,
+                "startOffset": 28,
+                "endOffset": 30
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 556,
+                "endLine": 556,
+                "startOffset": 31,
+                "endOffset": 32
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 562,
+                "endLine": 562,
+                "startOffset": 4,
+                "endOffset": 9
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+              "textRange": {
+                "startLine": 566,
+                "endLine": 566,
+                "startOffset": 25,
+                "endOffset": 27
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Refactor this function to reduce its Cognitive Complexity from 24 to the 15 allowed.",
+      "effort": "14min",
+      "debt": "14min",
+      "author": "",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAOk3bLWoNeHjOzF",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:BACKEND/src/validations/auth.js",
+      "project": "isy1102-cuidarte",
+      "line": 32,
+      "hash": "a2ded6023ea66cdb906555d6f824a151",
+      "textRange": {
+        "startLine": 32,
+        "endLine": 32,
+        "startOffset": 16,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAOk3bLWoNeHjOzG",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:BACKEND/src/validations/auth.js",
+      "project": "isy1102-cuidarte",
+      "line": 32,
+      "hash": "a2ded6023ea66cdb906555d6f824a151",
+      "textRange": {
+        "startLine": 32,
+        "endLine": 32,
+        "startOffset": 29,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAOk3bLWoNeHjOzH",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:BACKEND/src/validations/auth.js",
+      "project": "isy1102-cuidarte",
+      "line": 32,
+      "hash": "a2ded6023ea66cdb906555d6f824a151",
+      "textRange": {
+        "startLine": 32,
+        "endLine": 32,
+        "startOffset": 48,
+        "endOffset": 53
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUANb3bLWoNeHjOy_",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:BACKEND/src/validations/pacientes.js",
+      "project": "isy1102-cuidarte",
+      "line": 8,
+      "hash": "f4ce66540a336de88247727ffe095c16",
+      "textRange": {
+        "startLine": 8,
+        "endLine": 8,
+        "startOffset": 16,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUANb3bLWoNeHjOzA",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:BACKEND/src/validations/pacientes.js",
+      "project": "isy1102-cuidarte",
+      "line": 8,
+      "hash": "f4ce66540a336de88247727ffe095c16",
+      "textRange": {
+        "startLine": 8,
+        "endLine": 8,
+        "startOffset": 29,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUANb3bLWoNeHjOzB",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:BACKEND/src/validations/pacientes.js",
+      "project": "isy1102-cuidarte",
+      "line": 8,
+      "hash": "f4ce66540a336de88247727ffe095c16",
+      "textRange": {
+        "startLine": 8,
+        "endLine": 8,
+        "startOffset": 48,
+        "endOffset": 53
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUANb3bLWoNeHjOzC",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:BACKEND/src/validations/pacientes.js",
+      "project": "isy1102-cuidarte",
+      "line": 99,
+      "hash": "a2ded6023ea66cdb906555d6f824a151",
+      "textRange": {
+        "startLine": 99,
+        "endLine": 99,
+        "startOffset": 16,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUANb3bLWoNeHjOzD",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:BACKEND/src/validations/pacientes.js",
+      "project": "isy1102-cuidarte",
+      "line": 99,
+      "hash": "a2ded6023ea66cdb906555d6f824a151",
+      "textRange": {
+        "startLine": 99,
+        "endLine": 99,
+        "startOffset": 29,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUANb3bLWoNeHjOzE",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:BACKEND/src/validations/pacientes.js",
+      "project": "isy1102-cuidarte",
+      "line": 99,
+      "hash": "a2ded6023ea66cdb906555d6f824a151",
+      "textRange": {
+        "startLine": 99,
+        "endLine": 99,
+        "startOffset": 48,
+        "endOffset": 53
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAea3bLWoNeHjO0A",
+      "rule": "javascript:S1481",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/components/RoleGuard.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 28,
+      "hash": "af0194b689d5a07343f0611f04e45410",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 8,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove the declaration of the unused 'location' variable.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAeb3bLWoNeHjO0B",
+      "rule": "javascript:S1854",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/components/RoleGuard.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 28,
+      "hash": "af0194b689d5a07343f0611f04e45410",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 8,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this useless assignment to variable \"location\".",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAfR3bLWoNeHjO0C",
+      "rule": "javascript:S1135",
+      "severity": "INFO",
+      "component": "isy1102-cuidarte:FRONTEND/src/context/AuthContext.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 52,
+      "hash": "f2ff0a6d115ca82ee4e6e63d2d035cdc",
+      "textRange": {
+        "startLine": 52,
+        "endLine": 52,
+        "startOffset": 48,
+        "endOffset": 52
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Complete the task associated to this \"TODO\" comment.",
+      "effort": "0min",
+      "debt": "0min",
+      "author": "",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAcz3bLWoNeHjOz8",
+      "rule": "css:S4649",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/index.css",
+      "project": "isy1102-cuidarte",
+      "line": 6,
+      "hash": "c8cb8ce7edf5c33230ddc4f8800c6688",
+      "textRange": {
+        "startLine": 6,
+        "endLine": 6,
+        "startOffset": 0,
+        "endOffset": 48
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Unexpected missing generic font family",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "",
+      "tags": [],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAWN3bLWoNeHjOzV",
+      "rule": "javascript:S1128",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/Home.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 10,
+      "hash": "6e7fcd761b8b780ae66185d92dfe004f",
+      "textRange": {
+        "startLine": 10,
+        "endLine": 10,
+        "startOffset": 2,
+        "endOffset": 9
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import of 'Divider'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "es2015",
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAcg3bLWoNeHjOz6",
+      "rule": "javascript:S6478",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/auditoria/AuditoriaList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 51,
+      "hash": "05e6412360d92ed44f3dc692980e9e0a",
+      "textRange": {
+        "startLine": 51,
+        "endLine": 55,
+        "startOffset": 14,
+        "endOffset": 9
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state. Instead, move this component definition out of the parent component “AuditoriaList” and pass data as props. If you want to allow component creation in props, set allowAsProps option to true.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAcg3bLWoNeHjOz7",
+      "rule": "javascript:S6478",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/auditoria/AuditoriaList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 61,
+      "hash": "05e6412360d92ed44f3dc692980e9e0a",
+      "textRange": {
+        "startLine": 61,
+        "endLine": 68,
+        "startOffset": 14,
+        "endOffset": 9
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state. Instead, move this component definition out of the parent component “AuditoriaList” and pass data as props. If you want to allow component creation in props, set allowAsProps option to true.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAcL3bLWoNeHjOz2",
+      "rule": "javascript:S1128",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/auth/Register.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 1,
+      "hash": "c6b82ec408e928bc735fc4955306e338",
+      "textRange": {
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 9,
+        "endOffset": 17
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import of 'useState'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "es2015",
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAcL3bLWoNeHjOz3",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/auth/Register.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 28,
+      "hash": "a2ded6023ea66cdb906555d6f824a151",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 16,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAcL3bLWoNeHjOz4",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/auth/Register.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 28,
+      "hash": "a2ded6023ea66cdb906555d6f824a151",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 29,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAcL3bLWoNeHjOz5",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/auth/Register.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 28,
+      "hash": "a2ded6023ea66cdb906555d6f824a151",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 48,
+        "endOffset": 53
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUATL3bLWoNeHjOzL",
+      "rule": "javascript:S1128",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenDetalle.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 11,
+      "hash": "a9e3cce01065047e4b4be4c64c8be36d",
+      "textRange": {
+        "startLine": 11,
+        "endLine": 11,
+        "startOffset": 2,
+        "endOffset": 6
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import of 'Chip'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "es2015",
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAUq3bLWoNeHjOzM",
+      "rule": "javascript:S1128",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 21,
+      "hash": "23051a79a098f16e0b6c9c76ecf81e13",
+      "textRange": {
+        "startLine": 21,
+        "endLine": 21,
+        "startOffset": 7,
+        "endOffset": 19
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import of 'DownloadIcon'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "es2015",
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAUr3bLWoNeHjOzN",
+      "rule": "javascript:S3776",
+      "severity": "CRITICAL",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 47,
+      "hash": "6e00f9f49a2729cb149193b2979db8be",
+      "textRange": {
+        "startLine": 47,
+        "endLine": 47,
+        "startOffset": 24,
+        "endOffset": 34
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 253,
+                "endLine": 253,
+                "startOffset": 24,
+                "endOffset": 26
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 270,
+                "endLine": 270,
+                "startOffset": 24,
+                "endOffset": 25
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 274,
+                "endLine": 274,
+                "startOffset": 16,
+                "endOffset": 17
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 280,
+                "endLine": 280,
+                "startOffset": 23,
+                "endOffset": 24
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 400,
+                "endLine": 400,
+                "startOffset": 36,
+                "endOffset": 38
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 400,
+                "endLine": 400,
+                "startOffset": 55,
+                "endOffset": 56
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 413,
+                "endLine": 413,
+                "startOffset": 26,
+                "endOffset": 27
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 423,
+                "endLine": 423,
+                "startOffset": 28,
+                "endOffset": 29
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 428,
+                "endLine": 428,
+                "startOffset": 44,
+                "endOffset": 45
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 430,
+                "endLine": 430,
+                "startOffset": 28,
+                "endOffset": 29
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 433,
+                "endLine": 433,
+                "startOffset": 45,
+                "endOffset": 46
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 436,
+                "endLine": 436,
+                "startOffset": 30,
+                "endOffset": 31
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 439,
+                "endLine": 439,
+                "startOffset": 30,
+                "endOffset": 31
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 450,
+                "endLine": 450,
+                "startOffset": 28,
+                "endOffset": 29
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 452,
+                "endLine": 452,
+                "startOffset": 28,
+                "endOffset": 29
+              },
+              "msg": "+3 (incl. 2 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 607,
+                "endLine": 607,
+                "startOffset": 22,
+                "endOffset": 23
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 608,
+                "endLine": 608,
+                "startOffset": 24,
+                "endOffset": 25
+              },
+              "msg": "+3 (incl. 2 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+              "textRange": {
+                "startLine": 611,
+                "endLine": 611,
+                "startOffset": 22,
+                "endOffset": 23
+              },
+              "msg": "+3 (incl. 2 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Refactor this function to reduce its Cognitive Complexity from 33 to the 15 allowed.",
+      "effort": "23min",
+      "debt": "23min",
+      "author": "",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAUr3bLWoNeHjOzO",
+      "rule": "javascript:S1854",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 70,
+      "hash": "882d51ee2020ebc4268e5806ebfe4a23",
+      "textRange": {
+        "startLine": 70,
+        "endLine": 70,
+        "startOffset": 12,
+        "endOffset": 25
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this useless assignment to variable \"nuevoExamenId\".",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAUr3bLWoNeHjOzP",
+      "rule": "javascript:S3358",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 451,
+      "hash": "928e97902f96b39317e9d7f134a6539f",
+      "textRange": {
+        "startLine": 451,
+        "endLine": 453,
+        "startOffset": 30,
+        "endOffset": 56
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Extract this nested ternary operation into an independent statement.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAUr3bLWoNeHjOzQ",
+      "rule": "javascript:S3358",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 607,
+      "hash": "66369b520721fdfc5ae8884a3c80ee43",
+      "textRange": {
+        "startLine": 607,
+        "endLine": 609,
+        "startOffset": 24,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Extract this nested ternary operation into an independent statement.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAUr3bLWoNeHjOzR",
+      "rule": "javascript:S3358",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 610,
+      "hash": "9bad9ea9acd54ca4029f15bf7692aa98",
+      "textRange": {
+        "startLine": 610,
+        "endLine": 612,
+        "startOffset": 24,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Extract this nested ternary operation into an independent statement.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUARq3bLWoNeHjOzK",
+      "rule": "javascript:S1128",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenesList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 12,
+      "hash": "66fc91ecb64d5a8d081a63b3a8a048ef",
+      "textRange": {
+        "startLine": 12,
+        "endLine": 12,
+        "startOffset": 2,
+        "endOffset": 8
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import of 'Button'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "es2015",
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAV63bLWoNeHjOzS",
+      "rule": "javascript:S6478",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenesTabList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 71,
+      "hash": "05e6412360d92ed44f3dc692980e9e0a",
+      "textRange": {
+        "startLine": 71,
+        "endLine": 77,
+        "startOffset": 20,
+        "endOffset": 15
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state. Instead, move this component definition out of the parent component “ExamenesTabList” and pass data as props. If you want to allow component creation in props, set allowAsProps option to true.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAV73bLWoNeHjOzT",
+      "rule": "javascript:S6478",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenesTabList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 85,
+      "hash": "05e6412360d92ed44f3dc692980e9e0a",
+      "textRange": {
+        "startLine": 85,
+        "endLine": 97,
+        "startOffset": 14,
+        "endOffset": 9
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state. Instead, move this component definition out of the parent component “ExamenesTabList” and pass data as props. If you want to allow component creation in props, set allowAsProps option to true.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAV73bLWoNeHjOzU",
+      "rule": "javascript:S6478",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenesTabList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 116,
+      "hash": "05e6412360d92ed44f3dc692980e9e0a",
+      "textRange": {
+        "startLine": 116,
+        "endLine": 162,
+        "startOffset": 14,
+        "endOffset": 9
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state. Instead, move this component definition out of the parent component “ExamenesTabList” and pass data as props. If you want to allow component creation in props, set allowAsProps option to true.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAYA3bLWoNeHjOzc",
+      "rule": "javascript:S3863",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/informacion/AcercaDe.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 16,
+      "hash": "c1b828db0ba159e70088d62bdb679633",
+      "textRange": {
+        "startLine": 16,
+        "endLine": 16,
+        "startOffset": 0,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "'@mui/material' import is duplicated.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "",
+      "tags": [
+        "es2015"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAWd3bLWoNeHjOzW",
+      "rule": "javascript:S3863",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/informacion/Ayuda.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 15,
+      "hash": "c1b828db0ba159e70088d62bdb679633",
+      "textRange": {
+        "startLine": 15,
+        "endLine": 15,
+        "startOffset": 0,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "'@mui/material' import is duplicated.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "",
+      "tags": [
+        "es2015"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAWd3bLWoNeHjOzX",
+      "rule": "javascript:S6479",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/informacion/Ayuda.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 119,
+      "hash": "ded11e0d5f5f357fc7dbc4b9547de747",
+      "textRange": {
+        "startLine": 119,
+        "endLine": 119,
+        "startOffset": 34,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not use Array index in keys",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAWd3bLWoNeHjOzY",
+      "rule": "javascript:S6479",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/informacion/Ayuda.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 148,
+      "hash": "ded11e0d5f5f357fc7dbc4b9547de747",
+      "textRange": {
+        "startLine": 148,
+        "endLine": 148,
+        "startOffset": 38,
+        "endOffset": 43
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not use Array index in keys",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAWd3bLWoNeHjOzZ",
+      "rule": "javascript:S6479",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/informacion/Ayuda.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 179,
+      "hash": "ded11e0d5f5f357fc7dbc4b9547de747",
+      "textRange": {
+        "startLine": 179,
+        "endLine": 179,
+        "startOffset": 38,
+        "endOffset": 43
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not use Array index in keys",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAWr3bLWoNeHjOza",
+      "rule": "javascript:S3863",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/informacion/PoliticaPrivacidad.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 11,
+      "hash": "c1b828db0ba159e70088d62bdb679633",
+      "textRange": {
+        "startLine": 11,
+        "endLine": 11,
+        "startOffset": 0,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "'@mui/material' import is duplicated.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "",
+      "tags": [
+        "es2015"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAXv3bLWoNeHjOzb",
+      "rule": "javascript:S3863",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/informacion/TerminosUso.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 11,
+      "hash": "c1b828db0ba159e70088d62bdb679633",
+      "textRange": {
+        "startLine": 11,
+        "endLine": 11,
+        "startOffset": 0,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "'@mui/material' import is duplicated.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "",
+      "tags": [
+        "es2015"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZQ3bLWoNeHjOzg",
+      "rule": "javascript:S1128",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 5,
+      "hash": "2d36215eee57895a9077b8030b415853",
+      "textRange": {
+        "startLine": 5,
+        "endLine": 5,
+        "startOffset": 9,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import of 'useFormik'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "es2015",
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZQ3bLWoNeHjOzh",
+      "rule": "javascript:S1128",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 6,
+      "hash": "407e2620603401e4fcecaf9cf2683ad9",
+      "textRange": {
+        "startLine": 6,
+        "endLine": 6,
+        "startOffset": 9,
+        "endOffset": 23
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import of 'pacienteSchema'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "es2015",
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZQ3bLWoNeHjOzi",
+      "rule": "javascript:S1481",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 12,
+      "hash": "e3325f16f26de6e351a83eec83f6bdb7",
+      "textRange": {
+        "startLine": 12,
+        "endLine": 12,
+        "startOffset": 9,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove the declaration of the unused 'loading' variable.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZQ3bLWoNeHjOzj",
+      "rule": "javascript:S1854",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 12,
+      "hash": "e3325f16f26de6e351a83eec83f6bdb7",
+      "textRange": {
+        "startLine": 12,
+        "endLine": 12,
+        "startOffset": 9,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this useless assignment to variable \"loading\".",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZQ3bLWoNeHjOzk",
+      "rule": "javascript:S1481",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 12,
+      "hash": "e3325f16f26de6e351a83eec83f6bdb7",
+      "textRange": {
+        "startLine": 12,
+        "endLine": 12,
+        "startOffset": 18,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove the declaration of the unused 'setLoading' variable.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZQ3bLWoNeHjOzl",
+      "rule": "javascript:S1854",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 12,
+      "hash": "e3325f16f26de6e351a83eec83f6bdb7",
+      "textRange": {
+        "startLine": 12,
+        "endLine": 12,
+        "startOffset": 18,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this useless assignment to variable \"setLoading\".",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZQ3bLWoNeHjOzm",
+      "rule": "javascript:S3776",
+      "severity": "CRITICAL",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 21,
+      "hash": "c01d926fa370503eaac818f961de0cbc",
+      "textRange": {
+        "startLine": 21,
+        "endLine": 21,
+        "startOffset": 32,
+        "endOffset": 34
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 25,
+                "endLine": 25,
+                "startOffset": 22,
+                "endOffset": 24
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 26,
+                "endLine": 26,
+                "startOffset": 42,
+                "endOffset": 44
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 27,
+                "endLine": 27,
+                "startOffset": 48,
+                "endOffset": 50
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 48,
+                "endOffset": 50
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 29,
+                "endLine": 29,
+                "startOffset": 48,
+                "endOffset": 49
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 30,
+                "endLine": 30,
+                "startOffset": 24,
+                "endOffset": 26
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 31,
+                "endLine": 31,
+                "startOffset": 40,
+                "endOffset": 42
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 32,
+                "endLine": 32,
+                "startOffset": 40,
+                "endOffset": 42
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 33,
+                "endLine": 33,
+                "startOffset": 26,
+                "endOffset": 28
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 34,
+                "endLine": 34,
+                "startOffset": 32,
+                "endOffset": 34
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 35,
+                "endLine": 35,
+                "startOffset": 34,
+                "endOffset": 36
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 36,
+                "endLine": 36,
+                "startOffset": 68,
+                "endOffset": 70
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 37,
+                "endLine": 37,
+                "startOffset": 72,
+                "endOffset": 74
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 38,
+                "endLine": 38,
+                "startOffset": 72,
+                "endOffset": 74
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 39,
+                "endLine": 39,
+                "startOffset": 44,
+                "endOffset": 46
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 40,
+                "endLine": 40,
+                "startOffset": 44,
+                "endOffset": 46
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 41,
+                "endLine": 41,
+                "startOffset": 46,
+                "endOffset": 48
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 42,
+                "endLine": 42,
+                "startOffset": 32,
+                "endOffset": 34
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 43,
+                "endLine": 43,
+                "startOffset": 58,
+                "endOffset": 60
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 44,
+                "endLine": 44,
+                "startOffset": 44,
+                "endOffset": 46
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 45,
+                "endLine": 45,
+                "startOffset": 78,
+                "endOffset": 80
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+              "textRange": {
+                "startLine": 47,
+                "endLine": 47,
+                "startOffset": 6,
+                "endOffset": 11
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Refactor this function to reduce its Cognitive Complexity from 22 to the 15 allowed.",
+      "effort": "12min",
+      "debt": "12min",
+      "author": "",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAYW3bLWoNeHjOzd",
+      "rule": "javascript:S1128",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacientesTabCreate.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 1,
+      "hash": "6470e6e3ae76c085a2875cf4f3194704",
+      "textRange": {
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 19,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import of 'useEffect'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "es2015",
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAYW3bLWoNeHjOze",
+      "rule": "javascript:S3358",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacientesTabCreate.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 501,
+      "hash": "8fd9b469ae47a2b51c51e9a755b5fef8",
+      "textRange": {
+        "startLine": 501,
+        "endLine": 503,
+        "startOffset": 22,
+        "endOffset": 40
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Extract this nested ternary operation into an independent statement.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAYW3bLWoNeHjOzf",
+      "rule": "javascript:S3358",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacientesTabCreate.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 504,
+      "hash": "d4a520e1edbb18dc7af6a2cecce91b6d",
+      "textRange": {
+        "startLine": 504,
+        "endLine": 506,
+        "startOffset": 22,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Extract this nested ternary operation into an independent statement.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZf3bLWoNeHjOzn",
+      "rule": "javascript:S1481",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacientesTabList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 24,
+      "hash": "6c01f23e26e93a38b19d0764bcc8157b",
+      "textRange": {
+        "startLine": 24,
+        "endLine": 24,
+        "startOffset": 10,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove the declaration of the unused 'role' variable.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZf3bLWoNeHjOzo",
+      "rule": "javascript:S1854",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacientesTabList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 24,
+      "hash": "6c01f23e26e93a38b19d0764bcc8157b",
+      "textRange": {
+        "startLine": 24,
+        "endLine": 24,
+        "startOffset": 10,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this useless assignment to variable \"role\".",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZg3bLWoNeHjOzp",
+      "rule": "javascript:S6478",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacientesTabList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 53,
+      "hash": "05e6412360d92ed44f3dc692980e9e0a",
+      "textRange": {
+        "startLine": 53,
+        "endLine": 75,
+        "startOffset": 14,
+        "endOffset": 9
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state. Instead, move this component definition out of the parent component “PacientesTabList” and pass data as props. If you want to allow component creation in props, set allowAsProps option to true.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZg3bLWoNeHjOzq",
+      "rule": "javascript:S6478",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacientesTabList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 86,
+      "hash": "05e6412360d92ed44f3dc692980e9e0a",
+      "textRange": {
+        "startLine": 86,
+        "endLine": 91,
+        "startOffset": 14,
+        "endOffset": 9
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state. Instead, move this component definition out of the parent component “PacientesTabList” and pass data as props. If you want to allow component creation in props, set allowAsProps option to true.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZg3bLWoNeHjOzr",
+      "rule": "javascript:S6478",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacientesTabList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 97,
+      "hash": "05e6412360d92ed44f3dc692980e9e0a",
+      "textRange": {
+        "startLine": 97,
+        "endLine": 104,
+        "startOffset": 14,
+        "endOffset": 9
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state. Instead, move this component definition out of the parent component “PacientesTabList” and pass data as props. If you want to allow component creation in props, set allowAsProps option to true.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZg3bLWoNeHjOzs",
+      "rule": "javascript:S6478",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacientesTabList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 122,
+      "hash": "05e6412360d92ed44f3dc692980e9e0a",
+      "textRange": {
+        "startLine": 122,
+        "endLine": 153,
+        "startOffset": 14,
+        "endOffset": 9
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state. Instead, move this component definition out of the parent component “PacientesTabList” and pass data as props. If you want to allow component creation in props, set allowAsProps option to true.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAa23bLWoNeHjOzv",
+      "rule": "javascript:S3776",
+      "severity": "CRITICAL",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 173,
+      "hash": "657b4eba89ee0519b2f1fc552e1435de",
+      "textRange": {
+        "startLine": 173,
+        "endLine": 173,
+        "startOffset": 15,
+        "endOffset": 17
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 174,
+                "endLine": 174,
+                "startOffset": 4,
+                "endOffset": 6
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 179,
+                "endLine": 179,
+                "startOffset": 36,
+                "endOffset": 38
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 184,
+                "endLine": 184,
+                "startOffset": 46,
+                "endOffset": 48
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 185,
+                "endLine": 185,
+                "startOffset": 30,
+                "endOffset": 32
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 186,
+                "endLine": 186,
+                "startOffset": 30,
+                "endOffset": 32
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 188,
+                "endLine": 188,
+                "startOffset": 60,
+                "endOffset": 62
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 192,
+                "endLine": 192,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 192,
+                "endLine": 192,
+                "startOffset": 23,
+                "endOffset": 25
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 200,
+                "endLine": 200,
+                "startOffset": 36,
+                "endOffset": 37
+              },
+              "msg": "+3 (incl. 2 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 201,
+                "endLine": 201,
+                "startOffset": 56,
+                "endOffset": 58
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 202,
+                "endLine": 202,
+                "startOffset": 62,
+                "endOffset": 64
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 203,
+                "endLine": 203,
+                "startOffset": 62,
+                "endOffset": 64
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 204,
+                "endLine": 204,
+                "startOffset": 62,
+                "endOffset": 63
+              },
+              "msg": "+3 (incl. 2 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 205,
+                "endLine": 205,
+                "startOffset": 38,
+                "endOffset": 40
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 206,
+                "endLine": 206,
+                "startOffset": 54,
+                "endOffset": 56
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 207,
+                "endLine": 207,
+                "startOffset": 54,
+                "endOffset": 56
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 208,
+                "endLine": 208,
+                "startOffset": 40,
+                "endOffset": 42
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 209,
+                "endLine": 209,
+                "startOffset": 46,
+                "endOffset": 48
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 210,
+                "endLine": 210,
+                "startOffset": 48,
+                "endOffset": 50
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 211,
+                "endLine": 211,
+                "startOffset": 82,
+                "endOffset": 84
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 212,
+                "endLine": 212,
+                "startOffset": 86,
+                "endOffset": 88
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 213,
+                "endLine": 213,
+                "startOffset": 86,
+                "endOffset": 88
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 214,
+                "endLine": 214,
+                "startOffset": 58,
+                "endOffset": 60
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 215,
+                "endLine": 215,
+                "startOffset": 58,
+                "endOffset": 60
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 216,
+                "endLine": 216,
+                "startOffset": 60,
+                "endOffset": 62
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 217,
+                "endLine": 217,
+                "startOffset": 46,
+                "endOffset": 48
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 218,
+                "endLine": 218,
+                "startOffset": 72,
+                "endOffset": 74
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 219,
+                "endLine": 219,
+                "startOffset": 58,
+                "endOffset": 60
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 220,
+                "endLine": 220,
+                "startOffset": 92,
+                "endOffset": 94
+              },
+              "msg": "+1",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 222,
+                "endLine": 222,
+                "startOffset": 12,
+                "endOffset": 17
+              },
+              "msg": "+3 (incl. 2 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+              "textRange": {
+                "startLine": 228,
+                "endLine": 228,
+                "startOffset": 8,
+                "endOffset": 13
+              },
+              "msg": "+2 (incl. 1 for nesting)",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Refactor this function to reduce its Cognitive Complexity from 39 to the 15 allowed.",
+      "effort": "29min",
+      "debt": "29min",
+      "author": "",
+      "tags": [
+        "brain-overload"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZv3bLWoNeHjOzt",
+      "rule": "javascript:S1481",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuariosList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 14,
+      "hash": "3bc69c7b2edf09db2fa43eff169dc9be",
+      "textRange": {
+        "startLine": 14,
+        "endLine": 14,
+        "startOffset": 16,
+        "endOffset": 20
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove the declaration of the unused 'user' variable.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAZv3bLWoNeHjOzu",
+      "rule": "javascript:S1854",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuariosList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 14,
+      "hash": "3bc69c7b2edf09db2fa43eff169dc9be",
+      "textRange": {
+        "startLine": 14,
+        "endLine": 14,
+        "startOffset": 16,
+        "endOffset": 20
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this useless assignment to variable \"user\".",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "unused"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAbI3bLWoNeHjOzw",
+      "rule": "javascript:S3358",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuariosTabCreate.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 188,
+      "hash": "c497d07ce9adb66ccb18210fde233900",
+      "textRange": {
+        "startLine": 188,
+        "endLine": 192,
+        "startOffset": 24,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Extract this nested ternary operation into an independent statement.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAbI3bLWoNeHjOzx",
+      "rule": "javascript:S3358",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuariosTabCreate.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 190,
+      "hash": "2db414c6f6c3436f94a680af14ff45cd",
+      "textRange": {
+        "startLine": 190,
+        "endLine": 192,
+        "startOffset": 24,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Extract this nested ternary operation into an independent statement.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "confusing"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAba3bLWoNeHjOzy",
+      "rule": "javascript:S6478",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuariosTabList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 53,
+      "hash": "05e6412360d92ed44f3dc692980e9e0a",
+      "textRange": {
+        "startLine": 53,
+        "endLine": 73,
+        "startOffset": 14,
+        "endOffset": 9
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state. Instead, move this component definition out of the parent component “UsuariosTabList” and pass data as props. If you want to allow component creation in props, set allowAsProps option to true.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAba3bLWoNeHjOzz",
+      "rule": "javascript:S6478",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuariosTabList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 84,
+      "hash": "05e6412360d92ed44f3dc692980e9e0a",
+      "textRange": {
+        "startLine": 84,
+        "endLine": 88,
+        "startOffset": 14,
+        "endOffset": 9
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state. Instead, move this component definition out of the parent component “UsuariosTabList” and pass data as props. If you want to allow component creation in props, set allowAsProps option to true.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAba3bLWoNeHjOz0",
+      "rule": "javascript:S6478",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuariosTabList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 94,
+      "hash": "05e6412360d92ed44f3dc692980e9e0a",
+      "textRange": {
+        "startLine": 94,
+        "endLine": 98,
+        "startOffset": 14,
+        "endOffset": 9
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state. Instead, move this component definition out of the parent component “UsuariosTabList” and pass data as props. If you want to allow component creation in props, set allowAsProps option to true.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAba3bLWoNeHjOz1",
+      "rule": "javascript:S6478",
+      "severity": "MAJOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuariosTabList.jsx",
+      "project": "isy1102-cuidarte",
+      "line": 107,
+      "hash": "44a1b4b75660cc4584ad1ec5031c15ff",
+      "textRange": {
+        "startLine": 107,
+        "endLine": 167,
+        "startOffset": 14,
+        "endOffset": 9
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state. Instead, move this component definition out of the parent component “UsuariosTabList” and pass data as props. If you want to allow component creation in props, set allowAsProps option to true.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "jsx",
+        "performance",
+        "react"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAdI3bLWoNeHjOz-",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/validations/pacientes.js",
+      "project": "isy1102-cuidarte",
+      "line": 7,
+      "hash": "f4ce66540a336de88247727ffe095c16",
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 29,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAdI3bLWoNeHjOz9",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/validations/pacientes.js",
+      "project": "isy1102-cuidarte",
+      "line": 7,
+      "hash": "f4ce66540a336de88247727ffe095c16",
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 16,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AaFaUAdI3bLWoNeHjOz_",
+      "rule": "javascript:S6353",
+      "severity": "MINOR",
+      "component": "isy1102-cuidarte:FRONTEND/src/validations/pacientes.js",
+      "project": "isy1102-cuidarte",
+      "line": 7,
+      "hash": "f4ce66540a336de88247727ffe095c16",
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 48,
+        "endOffset": 53
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-10-20T17:13:11+0000",
+      "updateDate": "2026-10-20T17:13:11+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    }
+  ],
+  "components": [
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuariosList.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "UsuariosList.jsx",
+      "longName": "FRONTEND/src/pages/usuarios/UsuariosList.jsx",
+      "path": "FRONTEND/src/pages/usuarios/UsuariosList.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:BACKEND/src/validations/pacientes.js",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "pacientes.js",
+      "longName": "BACKEND/src/validations/pacientes.js",
+      "path": "BACKEND/src/validations/pacientes.js"
+    },
+    {
+      "key": "isy1102-cuidarte:BACKEND/src/validations/auth.js",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "auth.js",
+      "longName": "BACKEND/src/validations/auth.js",
+      "path": "BACKEND/src/validations/auth.js"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "UsuarioForm.jsx",
+      "longName": "FRONTEND/src/pages/usuarios/UsuarioForm.jsx",
+      "path": "FRONTEND/src/pages/usuarios/UsuarioForm.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:BACKEND/src/routes/pacientes.js",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "pacientes.js",
+      "longName": "BACKEND/src/routes/pacientes.js",
+      "path": "BACKEND/src/routes/pacientes.js"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuariosTabCreate.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "UsuariosTabCreate.jsx",
+      "longName": "FRONTEND/src/pages/usuarios/UsuariosTabCreate.jsx",
+      "path": "FRONTEND/src/pages/usuarios/UsuariosTabCreate.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/usuarios/UsuariosTabList.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "UsuariosTabList.jsx",
+      "longName": "FRONTEND/src/pages/usuarios/UsuariosTabList.jsx",
+      "path": "FRONTEND/src/pages/usuarios/UsuariosTabList.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacientesTabCreate.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "PacientesTabCreate.jsx",
+      "longName": "FRONTEND/src/pages/pacientes/PacientesTabCreate.jsx",
+      "path": "FRONTEND/src/pages/pacientes/PacientesTabCreate.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "PacienteForm.jsx",
+      "longName": "FRONTEND/src/pages/pacientes/PacienteForm.jsx",
+      "path": "FRONTEND/src/pages/pacientes/PacienteForm.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/pacientes/PacientesTabList.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "PacientesTabList.jsx",
+      "longName": "FRONTEND/src/pages/pacientes/PacientesTabList.jsx",
+      "path": "FRONTEND/src/pages/pacientes/PacientesTabList.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:BACKEND/src/routes/auth.js",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "auth.js",
+      "longName": "BACKEND/src/routes/auth.js",
+      "path": "BACKEND/src/routes/auth.js"
+    },
+    {
+      "key": "isy1102-cuidarte:BACKEND/src/routes/documentos.js",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "documentos.js",
+      "longName": "BACKEND/src/routes/documentos.js",
+      "path": "BACKEND/src/routes/documentos.js"
+    },
+    {
+      "key": "isy1102-cuidarte",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "Cuidarte+ ISY1102 QA",
+      "longName": "Cuidarte+ ISY1102 QA"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/auth/Register.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "Register.jsx",
+      "longName": "FRONTEND/src/pages/auth/Register.jsx",
+      "path": "FRONTEND/src/pages/auth/Register.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenDetalle.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "ExamenDetalle.jsx",
+      "longName": "FRONTEND/src/pages/examenes/ExamenDetalle.jsx",
+      "path": "FRONTEND/src/pages/examenes/ExamenDetalle.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenForm.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "ExamenForm.jsx",
+      "longName": "FRONTEND/src/pages/examenes/ExamenForm.jsx",
+      "path": "FRONTEND/src/pages/examenes/ExamenForm.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenesTabList.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "ExamenesTabList.jsx",
+      "longName": "FRONTEND/src/pages/examenes/ExamenesTabList.jsx",
+      "path": "FRONTEND/src/pages/examenes/ExamenesTabList.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/examenes/ExamenesList.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "ExamenesList.jsx",
+      "longName": "FRONTEND/src/pages/examenes/ExamenesList.jsx",
+      "path": "FRONTEND/src/pages/examenes/ExamenesList.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/informacion/TerminosUso.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "TerminosUso.jsx",
+      "longName": "FRONTEND/src/pages/informacion/TerminosUso.jsx",
+      "path": "FRONTEND/src/pages/informacion/TerminosUso.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/informacion/AcercaDe.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "AcercaDe.jsx",
+      "longName": "FRONTEND/src/pages/informacion/AcercaDe.jsx",
+      "path": "FRONTEND/src/pages/informacion/AcercaDe.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:BACKEND/src/routes/users.js",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "users.js",
+      "longName": "BACKEND/src/routes/users.js",
+      "path": "BACKEND/src/routes/users.js"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/Home.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "Home.jsx",
+      "longName": "FRONTEND/src/pages/Home.jsx",
+      "path": "FRONTEND/src/pages/Home.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/informacion/Ayuda.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "Ayuda.jsx",
+      "longName": "FRONTEND/src/pages/informacion/Ayuda.jsx",
+      "path": "FRONTEND/src/pages/informacion/Ayuda.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/informacion/PoliticaPrivacidad.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "PoliticaPrivacidad.jsx",
+      "longName": "FRONTEND/src/pages/informacion/PoliticaPrivacidad.jsx",
+      "path": "FRONTEND/src/pages/informacion/PoliticaPrivacidad.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/context/AuthContext.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "AuthContext.jsx",
+      "longName": "FRONTEND/src/context/AuthContext.jsx",
+      "path": "FRONTEND/src/context/AuthContext.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/components/RoleGuard.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "RoleGuard.jsx",
+      "longName": "FRONTEND/src/components/RoleGuard.jsx",
+      "path": "FRONTEND/src/components/RoleGuard.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/index.css",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "index.css",
+      "longName": "FRONTEND/src/index.css",
+      "path": "FRONTEND/src/index.css"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/pages/auditoria/AuditoriaList.jsx",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "AuditoriaList.jsx",
+      "longName": "FRONTEND/src/pages/auditoria/AuditoriaList.jsx",
+      "path": "FRONTEND/src/pages/auditoria/AuditoriaList.jsx"
+    },
+    {
+      "key": "isy1102-cuidarte:FRONTEND/src/validations/pacientes.js",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "pacientes.js",
+      "longName": "FRONTEND/src/validations/pacientes.js",
+      "path": "FRONTEND/src/validations/pacientes.js"
+    }
+  ],
+  "facets": []
+}

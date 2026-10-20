@@ -27,10 +27,10 @@ Abrir `http://localhost:9000`, iniciar con la cuenta inicial de la instalación 
 
 ```powershell
 $source=(Resolve-Path ../07_Codigo).Path
-docker run --rm -e SONAR_TOKEN -e SONAR_HOST_URL=http://host.docker.internal:9000 -v "${source}:/usr/src" sonarsource/sonar-scanner-cli:latest
+docker run --rm --memory=1024m --cpus=1 -e SONAR_TOKEN -e SONAR_SCANNER_JAVA_OPTS=-Xmx256m -e SONAR_HOST_URL=http://host.docker.internal:9000 -v "${source}:/usr/src" sonarsource/sonar-scanner-cli:latest -Dsonar.javascript.node.maxspace=256
 ```
 
-Las imágenes `community` y `latest` son móviles: para reproducir exactamente la versión, consultar `06_Evidencias/sonarqube/servidor.json`, `versiones.json` y `imagenes_docker.txt` si está disponible. Los resultados originales se conservan aun si se ejecuta después una versión distinta.
+El perfil de recursos usa la imagen oficial `9.9-community` (línea LTA histórica) para el entorno académico local; no se recomienda como versión productiva actual. El primer intento con `community` reciente exigió demasiados recursos del equipo y su registro se conserva aparte. Para repetir la versión exacta, consultar `06_Evidencias/sonarqube/servidor.json`, `versiones.json` e `imagenes_docker.txt`. La etiqueta del escáner `latest` es móvil. Los resultados originales se conservan aun si se ejecuta después una versión distinta. Ejecutar el análisis y el navegador de forma secuencial en equipos con poca memoria.
 
 ## Interfaz y capturas
 

@@ -15,10 +15,12 @@ services:
       interval: 5s
       retries: 12
   sonar:
-    image: sonarqube:community
+    image: sonarqube:9.9-community
     cpus: 1.5
-    mem_limit: 2304m
+    mem_limit: 2048m
     environment:
       SONAR_ES_BOOTSTRAP_CHECKS_DISABLE: 'true'
+      SONAR_WEB_JAVAOPTS: '-Xms128m -Xmx256m'
+      SONAR_CE_JAVAOPTS: '-Xms128m -Xmx256m'
     ports:
       - '127.0.0.1:9000:9000'

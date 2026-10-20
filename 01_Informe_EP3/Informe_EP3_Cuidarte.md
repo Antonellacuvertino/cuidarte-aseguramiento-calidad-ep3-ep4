@@ -8,6 +8,8 @@ Antonella Cuvertino y Miriam Hammami · 20 de octubre de 2026
 
 Este informe sigue los apartados 1–5 y las subsecciones 3.1–3.4 y 5.1–5.3 de la plantilla oficial proporcionada. El proyecto administra datos clínicos, de modo que se verifican comportamiento funcional, permisos, persistencia y trazabilidad. Los anexos incorporan certificación, análisis estático y relación normativa. Se conservan los documentos previos como antecedentes y se agregan resultados reales de esta sesión, sin reemplazar evidencia ausente por ejemplos de las guías.
 
+Fuentes internas: D1 corresponde al informe EP1 del 8 de septiembre de 2026, conservado en 05_Antecedentes; D2 es la estrategia de pruebas de experiencia 2; D3 es la actividad 01-10 de ejecución UI, ambos originales en 03_Actividades_en_clases. La plantilla EP3, la pauta EP4 y las dos guías nuevas se conservan en 04_Guias_y_plantillas.
+
 ### 1.1 Contexto
 
 Cuidarte+ gestiona usuarios, pacientes, exámenes y documentos clínicos mediante una SPA React, API Express y PostgreSQL. docker-compose.yml declara tres servicios: cuidarteplus-postgres-ev, cuidarteplus-backend-ev y cuidarteplus-frontend-ev. Los puertos de referencia son 15442, 4444 y 3333, respectivamente, sujetos a configuración. El acceso a datos de salud exige priorizar confidencialidad, integridad, disponibilidad y trazabilidad.
@@ -105,7 +107,7 @@ Se requiere 401 sin sesión y 403 para operaciones prohibidas; se documenta por 
 | --- | --- | --- |
 | Node.js v22.16.0 | Usado: runner fetch, JWT y PostgreSQL | Reproduce peticiones y verifica respuestas sin modificar rutas |
 | PostgreSQL 15.19 en Docker | Usado: base nueva, esquema init.sql y datos sintéticos | Permite contrastar persistencia y privilegios |
-| SonarQube Community y escáner oficial | Pendiente de análisis completo | Inspecciona calidad y seguridad de código; no sustituye DAST |
+| SonarQube Community y escáner oficial | Usado, exportación disponible | Inspecciona calidad y seguridad de código; no sustituye DAST |
 | Python, python-docx, python-pptx y ReportLab | Usado: consolidación, Word, PowerPoint, PDF y CSV | Entrega editable y artefactos verificables |
 | Playwright/Chromium | Apoyo para capturas si consta acta en evidencias | Capturas de interfaz y panel; no implica certificación de accesibilidad |
 | Jest/Supertest, Cypress/Selenium, JMeter y ZAP | Planificados; no presentados como ejecutados | Ampliar unitarias/cobertura, E2E, carga sostenida y DAST |
@@ -309,9 +311,54 @@ Carga real: 200 solicitudes lanzadas en paralelo, máximo 200 en vuelo; duració
 
 Fecha de ejecución: 20 de octubre de 2026 (los JSON usan UTC ISO 8601). Actor de ejecución: automatización QA asistida. Entorno, esperado, obtenido y evidencia están incluidos caso a caso en el JSON y en la bitácora CSV. No se incluyen tokens completos ni contraseñas en resultados.
 
-#### Análisis estático
+#### Resultados reales de SonarQube
 
-SonarQube no cuenta todavía con exportación completa. No se inventan métricas. La revisión manual confirma rutas y parámetros; no confirma SQLi en un controlador inexistente.
+Servidor **9.9.8.100196**, imagen oficial 9.9-community (línea LTA histórica), y SonarScanner CLI **8.1.0.6389**. Proyecto isy1102-cuidarte; código del snapshot 07_Codigo; exportaciones API y log del escáner en 06_Evidencias/sonarqube. El escáner terminó con EXECUTION SUCCESS y la tarea del servidor con SUCCESS. Se indexaron 63 archivos y se analizaron 56/56 archivos JavaScript. Quality Gate: **OK**.
+
+| Métrica | Valor | Interpretación |
+| --- | --- | --- |
+| Bugs | 1 | Medido por análisis |
+| Vulnerabilities | 0 | Medido por análisis |
+| Security Hotspots | 3 | Medido por análisis |
+| Code Smells | 72 | Medido por análisis |
+| Coverage (%) | 0.0 | Medido por análisis |
+| Líneas de código | 10133 | Medido por análisis |
+| Duplicación (%) | 14.5 | Medido por análisis |
+| Hotspots revisados (%) | 0.0 | Medido por análisis |
+
+Bugs indican problemas potenciales de fiabilidad; vulnerabilities requieren validación y corrección; hotspots requieren revisión contextual, no son automáticamente una vulnerabilidad; code smells reflejan mantenibilidad. Coverage proviene de pruebas instrumentadas: no se generó LCOV. Un valor reportado de 0% no equivale a cero pruebas de API; significa que el análisis no recibió cobertura ejecutable. El resultado del gate no sustituye la decisión QA ni certifica cumplimiento legal.
+
+| Regla | Severidad del analizador | Archivo/línea | Mensaje |
+| --- | --- | --- | --- |
+| javascript:S3776 | CRITICAL | BACKEND/src/routes/auth.js:71 | Refactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed. |
+| javascript:S3776 | CRITICAL | BACKEND/src/routes/pacientes.js:48 | Refactor this function to reduce its Cognitive Complexity from 22 to the 15 allowed. |
+| javascript:S3776 | CRITICAL | BACKEND/src/routes/pacientes.js:276 | Refactor this function to reduce its Cognitive Complexity from 21 to the 15 allowed. |
+| javascript:S3776 | CRITICAL | BACKEND/src/routes/users.js:283 | Refactor this function to reduce its Cognitive Complexity from 27 to the 15 allowed. |
+| javascript:S3776 | CRITICAL | BACKEND/src/routes/users.js:437 | Refactor this function to reduce its Cognitive Complexity from 24 to the 15 allowed. |
+| javascript:S3776 | CRITICAL | FRONTEND/src/pages/examenes/ExamenForm.jsx:47 | Refactor this function to reduce its Cognitive Complexity from 33 to the 15 allowed. |
+| javascript:S3776 | CRITICAL | FRONTEND/src/pages/pacientes/PacienteForm.jsx:21 | Refactor this function to reduce its Cognitive Complexity from 22 to the 15 allowed. |
+| javascript:S3776 | CRITICAL | FRONTEND/src/pages/usuarios/UsuarioForm.jsx:173 | Refactor this function to reduce its Cognitive Complexity from 39 to the 15 allowed. |
+| javascript:S4165 | MAJOR | BACKEND/src/routes/documentos.js:244 | Review this redundant assignment: "contentType" already holds the assigned value along all execution paths. |
+| javascript:S4624 | MAJOR | BACKEND/src/routes/users.js:60 | Refactor this code to not use nested template literals. |
+| javascript:S1854 | MAJOR | FRONTEND/src/components/RoleGuard.jsx:28 | Remove this useless assignment to variable "location". |
+| css:S4649 | MAJOR | FRONTEND/src/index.css:6 | Unexpected missing generic font family |
+
+La hipótesis de SQLi del encargo menciona backend/src/controllers/examenes.controller.js, archivo ausente. El código real usa BACKEND/src/routes/examenes.js y consultas parametrizadas observadas. No se atribuye a SonarQube una SQLi que no figure en sus issues. Si una edición del analizador no detecta un riesgo confirmado por API, la evidencia dinámica conserva validez y debe tratarse en QA.
+
+#### Hallazgos estáticos concretos y comparación con criterios
+
+| Hallazgo real | Ubicación | Interpretación técnica y criterio | Acción propuesta |
+|---|---|---|---|
+| css:S4649, BUG MAJOR | FRONTEND/src/index.css:6 | Falta familia tipográfica genérica de respaldo; afecta robustez visual/usabilidad. No demuestra por sí solo incumplimiento WCAG AA | Añadir respaldo adecuado y verificar legibilidad y zoom |
+| javascript:S5693, hotspot TO_REVIEW | BACKEND/src/routes/documentos.js:11 | Revisar límite de carga y memoria; riesgo de disponibilidad si múltiples archivos agotan recursos | Validar límite, concurrencia, almacenamiento y controles por actor |
+| javascript:S5122, hotspot TO_REVIEW | BACKEND/src/app.js:21 | CORS abierto requiere evaluación contextual de orígenes; se relaciona con protección de datos de salud, sin probar por sí solo acceso no autorizado | Definir allowlist y probar origen permitido/no permitido; mantener autorización por recurso |
+| javascript:S5689, hotspot TO_REVIEW | BACKEND/src/app.js:19 | Exposición de identificación tecnológica; revisión de configuración y superficie de información | Evaluar encabezados y deshabilitar divulgación innecesaria |
+| 72 Code Smells | issues.json y Hallazgos_sonar.csv | Deuda de mantenibilidad conforme al criterio de calidad ISO/IEC 25010; no equivalen a 72 vulnerabilidades | Priorizar complejidad y duplicación con regresión |
+
+La exportación del gate indica status OK y conditions vacío: no aporta condiciones evaluadas que permitan inferir el cumplimiento de nuestros umbrales de aceptación. Cero vulnerabilidades SAST no significa ausencia de vulnerabilidades: la API confirmó dos defectos críticos de autorización. Los tres hotspots permanecen TO_REVIEW, con 0% de revisión en la herramienta. No se simula que hayan sido cerrados.
+
+Limitación de compatibilidad: el analizador advirtió que Node.js 22 no era una versión recomendada para esa edición (recomendaba 16/18). Aun así registró 56/56 archivos JavaScript analizados y completó el reporte. Se documenta la advertencia y se requiere repetir con una combinación validada antes de una certificación final. La edición LTA histórica se usa solo para este análisis académico local; no se presenta como recomendación productiva vigente. El primer intento con la imagen reciente quedó en arranque bajo presión de memoria y se conserva como diagnóstico separado, sin mezclar resultados.
+
 
 ### 5.3 Criticidad de incidentes
 
