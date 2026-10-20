@@ -1,2 +1,2 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Conservar bytes del expediente y de MANIFEST_SHA256.txt.
+* -text
