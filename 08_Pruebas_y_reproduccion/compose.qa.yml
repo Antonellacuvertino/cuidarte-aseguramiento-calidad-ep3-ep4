@@ -1,0 +1,24 @@
+name: cuidarte-qa-entrega
+services:
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: qa
+      POSTGRES_PASSWORD: qa_local_synthetic
+      POSTGRES_DB: cuidarte_qa
+    ports:
+      - '127.0.0.1:15443:5432'
+    volumes:
+      - ../07_Codigo/BACKEND/sql/init.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U qa -d cuidarte_qa']
+      interval: 5s
+      retries: 12
+  sonar:
+    image: sonarqube:community
+    cpus: 1.5
+    mem_limit: 2304m
+    environment:
+      SONAR_ES_BOOTSTRAP_CHECKS_DISABLE: 'true'
+    ports:
+      - '127.0.0.1:9000:9000'

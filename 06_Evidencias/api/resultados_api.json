@@ -1,0 +1,313 @@
+{
+  "date": "2026-10-20T16:11:53.910Z",
+  "environment": {
+    "base": "http://127.0.0.1:4445",
+    "db": "cuidarte_qa; aislada; datos sintéticos",
+    "node": "v22.16.0",
+    "postgres": "PostgreSQL 15.19 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit"
+  },
+  "summary": {
+    "designed": 12,
+    "executed": 12,
+    "pass": 6,
+    "fail": 6,
+    "blocked": 0
+  },
+  "cases": [
+    {
+      "id": "CP-API-001",
+      "name": "Login válido y JWT",
+      "requirement": "RF-1.1",
+      "status": "PASS",
+      "expected": "200 y JWT verificable",
+      "observed": "HTTP 200; firma válida=true",
+      "evidence": {
+        "http": 200,
+        "jwt_valid": true
+      },
+      "date": "2026-10-20T16:11:19.418Z",
+      "executor": "Automatización QA asistida; validar por integrantes"
+    },
+    {
+      "id": "CP-API-002",
+      "name": "Credenciales inválidas",
+      "requirement": "RF-1.1",
+      "status": "PASS",
+      "expected": "401",
+      "observed": "HTTP 401",
+      "evidence": {
+        "status": 401,
+        "ms": 131,
+        "data": {
+          "error": "Credenciales inválidas"
+        }
+      },
+      "date": "2026-10-20T16:11:19.577Z",
+      "executor": "Automatización QA asistida; validar por integrantes"
+    },
+    {
+      "id": "CP-API-003",
+      "name": "Campos obligatorios de examen",
+      "requirement": "RF-3.1",
+      "status": "PASS",
+      "expected": "400 sin inserción",
+      "observed": "HTTP 400",
+      "evidence": {
+        "status": 400,
+        "ms": 5042,
+        "data": {
+          "error": "Error de validación",
+          "glosa": "Los datos proporcionados no son válidos",
+          "detalles": [
+            {
+              "field": "tipo_examen_medico_id",
+              "message": "El tipo de examen médico es requerido"
+            },
+            {
+              "field": "paciente_id",
+              "message": "El paciente es requerido"
+            }
+          ]
+        }
+      },
+      "date": "2026-10-20T16:11:24.620Z",
+      "executor": "Automatización QA asistida; validar por integrantes"
+    },
+    {
+      "id": "CP-API-004",
+      "name": "IDOR por paciente ajeno",
+      "requirement": "NFR-SEG-4",
+      "status": "PASS",
+      "expected": "403 sin datos ajenos",
+      "observed": "HTTP 403",
+      "evidence": {
+        "status": 403,
+        "ms": 272,
+        "data": {
+          "error": "No autorizado",
+          "glosa": "Solo puede ver sus propios exámenes"
+        }
+      },
+      "date": "2026-10-20T16:11:32.164Z",
+      "executor": "Automatización QA asistida; validar por integrantes"
+    },
+    {
+      "id": "CP-API-005",
+      "name": "JWT alterado y vencido",
+      "requirement": "NFR-SEG-9",
+      "status": "PASS",
+      "expected": "401 en ambos intentos",
+      "observed": "Alterado 401; vencido 401",
+      "evidence": [
+        {
+          "status": 401,
+          "ms": 21,
+          "data": {
+            "error": "No autorizado",
+            "glosa": "Token inválido"
+          }
+        },
+        {
+          "status": 401,
+          "ms": 34,
+          "data": {
+            "error": "No autorizado",
+            "glosa": "Token inválido"
+          }
+        }
+      ],
+      "date": "2026-10-20T16:11:32.243Z",
+      "executor": "Automatización QA asistida; validar por integrantes"
+    },
+    {
+      "id": "CP-API-006",
+      "name": "Registro y adjunto PDF",
+      "requirement": "RF-3.1; RF-4.3/4.4",
+      "status": "PASS",
+      "expected": "201; PDF íntegro para titular; 403 para ajeno",
+      "observed": "Crear 201; subir 201; propio 200; ajeno 403",
+      "evidence": [
+        {
+          "status": 201,
+          "ms": 7266,
+          "data": {
+            "id": "1",
+            "tipo_examen_medico_id": "1",
+            "paciente_id": "1",
+            "diagnosis": "Documento de prueba sintético",
+            "tratamiento": null,
+            "observaciones": null,
+            "notas": null,
+            "created_at": "2026-10-20T16:11:31.268Z"
+          }
+        },
+        {
+          "status": 201,
+          "ms": 5382,
+          "data": {
+            "documento": {
+              "id": "1",
+              "nombre_archivo": "qa_sintetico.pdf",
+              "created_at": "2026-10-20T16:11:37.408Z"
+            }
+          }
+        },
+        {
+          "status": 200,
+          "ms": 113,
+          "data": {
+            "bytes": 61,
+            "sha256": "b2743bdcbf708335c2d23cc18ff006d4c85b2f8c6448bf10ff31131a61d235a7"
+          }
+        },
+        {
+          "status": 403,
+          "ms": 81,
+          "data": {
+            "error": "No autorizado",
+            "glosa": "Solo puede ver sus propios documentos"
+          }
+        }
+      ],
+      "date": "2026-10-20T16:11:37.826Z",
+      "executor": "Automatización QA asistida; validar por integrantes"
+    },
+    {
+      "id": "CP-API-007",
+      "name": "Persistencia de borrado lógico",
+      "requirement": "RF-3.3",
+      "status": "FAIL",
+      "expected": "La fila permanece con marca lógica",
+      "observed": "HTTP 200; filas persistidas=0",
+      "evidence": {
+        "response": {
+          "status": 200,
+          "ms": 162,
+          "data": {
+            "deleted": true
+          }
+        },
+        "rows_after": 0
+      },
+      "date": "2026-10-20T16:11:38.149Z",
+      "executor": "Automatización QA asistida; validar por integrantes"
+    },
+    {
+      "id": "CP-API-008",
+      "name": "Contraseña con hash adaptativo",
+      "requirement": "NFR-SEG-2",
+      "status": "FAIL",
+      "expected": "Hash bcrypt; no texto claro",
+      "observed": "Formato bcrypt=false; igualdad con entrada=true",
+      "evidence": {
+        "bcrypt_format": false,
+        "equals_input": true
+      },
+      "date": "2026-10-20T16:11:38.167Z",
+      "executor": "Automatización QA asistida; validar por integrantes"
+    },
+    {
+      "id": "CP-API-009",
+      "name": "Auditoría de cambio de rol con origen",
+      "requirement": "RF-5.1",
+      "status": "FAIL",
+      "expected": "Cambio auditado con origen IP",
+      "observed": "HTTP 400; columnas=id, usuario_id, accion, fecha_hora",
+      "evidence": {
+        "response": {
+          "status": 400,
+          "ms": 21,
+          "data": {
+            "error": "Error de validación",
+            "glosa": "Los datos proporcionados no son válidos",
+            "detalles": [
+              {
+                "field": "",
+                "message": "Debe proporcionar al menos un campo para actualizar"
+              }
+            ]
+          }
+        },
+        "columns": [
+          "id",
+          "usuario_id",
+          "accion",
+          "fecha_hora"
+        ],
+        "event": {
+          "id": "4",
+          "usuario_id": "1",
+          "accion": "EXAMENES_ELIMINAR: eliminó examen médico ID 1",
+          "fecha_hora": "2026-10-20T16:11:37.924Z"
+        }
+      },
+      "date": "2026-10-20T16:11:39.269Z",
+      "executor": "Automatización QA asistida; validar por integrantes"
+    },
+    {
+      "id": "CP-API-010",
+      "name": "Médico no puede asignarse administrador",
+      "requirement": "NFR-SEG-4",
+      "status": "FAIL",
+      "expected": "403 y rol médico conservado",
+      "observed": "HTTP 400; roles=medico",
+      "evidence": {
+        "response": {
+          "status": 400,
+          "ms": 14,
+          "data": {
+            "error": "Error de validación",
+            "glosa": "Los datos proporcionados no son válidos",
+            "detalles": [
+              {
+                "field": "",
+                "message": "Debe proporcionar al menos un campo para actualizar"
+              }
+            ]
+          }
+        },
+        "roles": [
+          {
+            "nombre": "medico"
+          }
+        ]
+      },
+      "date": "2026-10-20T16:11:39.365Z",
+      "executor": "Automatización QA asistida; validar por integrantes"
+    },
+    {
+      "id": "CP-API-011",
+      "name": "Latencia de consulta menor de 300 ms",
+      "requirement": "NFR-PERF-1",
+      "status": "FAIL",
+      "expected": "200 y menos de 300 ms",
+      "observed": "HTTP 200; 5120 ms",
+      "evidence": {
+        "http": 200,
+        "latency_ms": 5120
+      },
+      "date": "2026-10-20T16:11:44.487Z",
+      "executor": "Automatización QA asistida; validar por integrantes"
+    },
+    {
+      "id": "CP-API-012",
+      "name": "Eliminar usuario sin autenticar",
+      "requirement": "NFR-SEG-4",
+      "status": "FAIL",
+      "expected": "401 y cuenta intacta",
+      "observed": "HTTP 200; filas restantes=0",
+      "evidence": {
+        "response": {
+          "status": 200,
+          "ms": 66,
+          "data": {
+            "deleted": true
+          }
+        },
+        "rows_after": 0
+      },
+      "date": "2026-10-20T16:11:44.577Z",
+      "executor": "Automatización QA asistida; validar por integrantes"
+    }
+  ]
+}

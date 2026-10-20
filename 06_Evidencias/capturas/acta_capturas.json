@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-20T16:39:53.529Z",
+  "tool": "Playwright Chromium; capturas reales de navegador",
+  "captures": [
+    {
+      "file": "resultados_api.png",
+      "source": "Resumen HTML generado a partir del JSON de ejecución; no es UI de la app"
+    }
+  ],
+  "ui_status": "BLOCKED",
+  "ui_error": "page.goto: Timeout 90000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:3334/login\", waiting until \"domcontentloaded\"\u001b[22m\n"
+}
