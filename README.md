@@ -1,35 +1,46 @@
-# Cuidarte+ · Examen final EP5 / EP6 · Encargo 3
+# Cuidarte+ · Examen final EP5 / EP6
 
 **Antonella Cuvertino · Duoc UC**  
 **Carrera:** Ingeniería Informática, Desarrollo de Software  
-**Asignatura:** ISY1102 · Seguridad y Calidad en el Desarrollo de Software  
-**Sección:** 02V · **Docente:** Luis Manuel Yagi Figueroa  
-**Presentación:** 17 de noviembre de 2026
+**ISY1102 · Sección 02V · Docente:** Luis Manuel Yagi Figueroa  
+**Defensa:** 17 de noviembre de 2026
 
-## Entrega en AVA
+## Pruebas y correcciones realizadas
 
-| Elemento | Archivo | Estado |
-|---|---|---|
-| Informe con el formato oficial EP5 | [01 · Informe final](01_Informe_Final_EP5.pdf) | Preparado: seis apartados, 12 fichas, ejecución, mitigación y mantenimiento. |
-| Diapositivas utilizadas | [02 · Presentación EP6](02_Presentacion_EP6.pdf) | Preparadas: 10 láminas para exposición individual de 10 minutos. |
-| Video individual | Grabar y subir el MP4 de Antonella | **Pendiente de grabación.** El guion está en el archivo 03. |
+| Campaña API / integración | PASS | FAIL | Bloqueados |
+|---|---:|---:|---:|
+| Antes: versión original | 8 | 12 | 0 |
+| Después: versión con cambios | 15 | 5 | 0 |
 
-## Preparación y soporte
+Son los **mismos 20 casos y criterios**, ejecutados en dos bases QA independientes con datos sintéticos. Siete casos cambian de FAIL a PASS; ninguno de los PASS iniciales pasa a FAIL. Los JSON, intentos previos, hashes y validación de retiro de triggers están en el ZIP 05.
 
-| Archivo | Contenido |
+Correcciones verificadas: autenticación y autorización antes de borrar o crear usuarios; restricción del cambio de roles a admin; validación de rol_id; actor numérico y transacción del borrado; IP en actualización del sistema médico. Un primer parche IP actuó en la rama equivocada, falló y fue corregido; se conserva ese intento.
+
+**Siguen fallando:** permisos de auditoría, rollback del cambio de rol, baja lógica de exámenes, hash de contraseñas y latencia por delayMiddleware(5000). No se afirma que sean imposibles de corregir: la propuesta y el alcance de cada pendiente están documentados. La API puede responder y aun así incumplir un requisito.
+
+**UI adicional:** login incorrecto y llegada a home verificados con Playwright/Edge. Se detectan dos avisos de error iguales: hallazgo leve abierto (UI-03), separado de los 20 casos API.
+
+## Qué entregar y qué estudiar
+
+| Archivo | Uso |
 |---|---|
-| [03 · Guion, defensa y video](03_Guion_Defensa_y_Video.pdf) | Explicación por lámina, 8 preguntas argumentadas y checklist de grabación. |
-| [04 · Editables, evidencias y guía](04_Editables_Evidencias_y_Guia.zip) | Informe Word, PowerPoint con notas, diagramas, JSON históricos, hashes y pautas oficiales. En Word, actualizar el índice al abrir; el PDF ya está paginado. |
-| [05 · Guías y actividades de clases](05_Guias_y_actividades_clases.zip) | Actividades y material de clase conservados como antecedentes en PDF dentro del ZIP. Su autoría histórica permanece en los originales. |
+| [01 · Informe final](01_Informe_Final_EP5.pdf) | Formato oficial: seis apartados, fichas, ejecución, causas, correcciones, retest y mantenimiento. |
+| [02 · Presentación EP6](02_Presentacion_EP6.pdf) | Diez láminas para exposición individual de diez minutos. |
+| [03 · Guion y defensa](03_Guion_Defensa_y_Video.pdf) | Explicación por lámina, ocho preguntas y preparación del video. |
+| [04 · Recorrido de pruebas y capturas](04_Recorrido_Pruebas_y_Capturas.pdf) | Comandos, recorrido paso a paso, capturas reales y qué demuestra cada evidencia. **Empieza aquí para ensayar.** |
+| [05 · Código, pruebas y evidencias](05_Codigo_Pruebas_y_Evidencias.zip) | Código antes/después sin credenciales, runner, JSON, capturas, reporte HTML interactivo, Word, PowerPoint y pautas. |
+| [06 · Guías y actividades de clases](06_Guias_y_actividades_clases.zip) | Antecedentes de clase en PDF dentro del ZIP; originales con autoría histórica conservada. |
 
-Para estudiar: abrir primero la presentación y luego el guion. Para AVA: entregar el informe, las diapositivas y el video grabado, según la indicación del docente. Los ZIP son soporte y guías; no reemplazan el video.
+**AVA:** informe, diapositivas utilizadas y video individual. **Video: pendiente de grabación personal por Antonella.** Los ZIP no reemplazan el video. Las capturas del reporte identifican que visualizan JSON; las capturas de login/home provienen del navegador real. El plan también indica la captura de cambios en VS Code que debe tomar la estudiante.
 
-## Alcance de los resultados
+## Reproducción local
 
-Evidencia de ejecución histórica del **20 de octubre de 2026**, interpretada en la preparación final del 16 de noviembre. API: 12 verificaciones, 6 PASS y 6 FAIL en el resumen original; dos escenarios no ejercitaron el flujo pretendido y requieren retest. SonarQube: 1 bug, 72 code smells, 3 hotspots, 0 vulnerabilidades clasificadas; gate OK sin condiciones explícitas y cobertura 0,0% sin LCOV.
+En el workspace: `03_LABORATORIO_FINAL/00_EMPIEZA_AQUI.md` explica el recorrido. Iniciar Docker Desktop y ejecutar `Iniciar-Laboratorio.ps1`; luego `Ejecutar-Pruebas.ps1 -Fase antes` y `-Fase despues`. Un exit code 1 significa que hay pruebas FAIL; no se cambia el test para ocultarlas. Las bases están aisladas: API antes 4446, API después 4447, PostgreSQL QA 15444 y app 3344.
 
-Jest, Cypress, SCA, ZAP, JMeter y el pipeline Actions son **propuestas sin ejecución acreditada**. La ráfaga de 200 solicitudes se ejecutó con Node, no con JMeter. La SQLi declarada no está corroborada en el archivo indicado y el escenario IDOR guardado bloqueó el acceso entre pacientes. El informe detalla las limitaciones y las contradicciones entre CSV y JSON.
+El ZIP 05 contiene `Laboratorio/Recorrido_Pruebas.html` para revisar caso por caso. Es un reporte estático de las corridas conservadas; las nuevas corridas requieren regenerarlo. No contiene claves de SonarQube, `.env`, JWT ni dumps clínicos. `db.js` se exporta sin el fallback privado y exige DATABASE_URL; esa adaptación de configuración está declarada.
 
-**Dictamen académico: CERTIFICADO CON RESERVAS. Producción BLOQUEADA** hasta cerrar los riesgos y acreditar los retests. No equivale a certificación legal ni a autorización de uso clínico.
+## Alcance y decisión
 
-Los entregables EP3/EP4 anteriores se conservan en el historial Git y en el respaldo local; esta portada corresponde a la entrega final individual.
+La campaña actual usa **Node fetch + pg**, y el recorrido UI usa **Playwright con Edge**. No se denomina Jest, Cypress ni JMeter a esas ejecuciones. El pipeline Actions, ZAP, JMeter y demás controles sin corrida siguen propuestos. Las métricas SonarQube de octubre son antecedentes; **no hay nuevo SAST sobre el parche**. SQLi se probó en login y se bloqueó; no acredita todas las rutas. IDOR se bloqueó en los escenarios definidos.
+
+**Dictamen académico: CERTIFICADO CON RESERVAS. Producción BLOQUEADA** por los defectos abiertos. Las mejoras verificadas no equivalen a certificación legal ni autorización de uso clínico.
