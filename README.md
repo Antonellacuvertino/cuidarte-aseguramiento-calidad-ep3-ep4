@@ -7,14 +7,14 @@ ISY1102 · Sección 02V · Docente Luis Manuel Yagi Figueroa
 
 | Archivo | Contenido |
 |---|---|
-| [01 · Informe EP5](01_Informe_EP5_AntonellaCuvertino_2026-11-17.pdf) | Formato oficial de seis apartados; casos, fechas, evidencia, incidencias, mitigación y mantenimiento. |
+| [01 · Informe EP5](01_Informe_EP5_AntonellaCuvertino_2026-11-17.pdf) | Informe académico en seis apartados, con 14 capturas integradas junto a los resultados; casos, fechas, incidencias, mitigación y mantenimiento. |
 | [02 · Presentación EP6](02_Presentacion_EP6_AntonellaCuvertino_2026-11-17.pdf) | Diez láminas para diez minutos de defensa individual. |
 | [03 · Guía para grabar hoy](03_Guia_Video_y_Defensa_2026-11-17.pdf) | Preparación, pantalla por minuto, guion oral y preguntas. **Empieza aquí para grabar.** |
-| [04 · Evidencias y capturas](04_Evidencias_y_Capturas_2026-11-17.pdf) | Recorrido y capturas; diferencia app real, reportes y pendientes. |
+| [04 · Evidencias y capturas](04_Evidencias_y_Capturas_2026-11-17.pdf) | Copia complementaria de capturas y recorrido. Las evidencias ya están integradas en el informe 01; no es necesario adjuntarlo por separado. |
 | [05 · Código y evidencias](05_Codigo_y_Evidencias_EP5_2026-11-17.zip) | Código antes/después sin credenciales privadas, colección Postman, JMX/JTL/HTML, ZAP, SonarQube, registro maestro, capturas, Word y PPTX. |
 | [06 · Guías y actividades de clases](06_Guias_y_actividades_clases.zip) | Antecedentes de clase conservados en ZIP; su autoría histórica no se altera. |
 
-**AVA:** informe, diapositivas utilizadas y video individual. **El video debe grabarlo Antonella; está pendiente.**
+**AVA:** informe 01 con evidencias integradas, diapositivas 02 y video individual. El documento 04 es un respaldo opcional, no un anexo obligatorio. **El video debe grabarlo Antonella; está pendiente.**
 
 ## Registro coherente desde la evidencia
 
